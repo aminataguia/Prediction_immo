@@ -6,6 +6,8 @@ Ce projet a pour objectif de prédire le prix au mètre carré des biens immobil
 README.md le fichier que vous lisez actuellement 
 Analyse model.ipynb le fichier contenant l'integralité des exports python demandé 
 
+### Le rendu 
+
 #Phase1
 
 Objectif
@@ -37,10 +39,13 @@ Mise en œuvre de deux API distinctes pour les modèles de phase 1 et phase 2 re
 Fichiers et Modèles
 model_phase1.pkl : Modèle de phase 1 sauvegardé avec pickle.
 model_phase2.pkl : Modèle de phase 2 sauvegardé avec pickle.
-Instructions d'utilisation
+
+## Instructions d'utilisation
 Installer les dépendances avec pip install -r requirements.txt.
 Exécuter l'API FastAPI avec uvicorn api:app --reload.
 Utiliser les points de terminaison respectifs pour prédire les prix au mètre carré pour les deux phases.
+importer sur le meme chemin tableau.csv 
+
 
 
 
