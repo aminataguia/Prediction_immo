@@ -2,7 +2,12 @@ Real Estate Price Prediction Project
 Overview
 Ce projet a pour objectif de prédire le prix au mètre carré des biens immobiliers en Île-de-France en utilisant différentes techniques de modélisation prédictive. Le projet est divisé en deux phases principales : la #phase1, qui se concentre sur la ville de Paris en 2022 avec deux variables explicatives (latitude et longitude), et la #phase2, qui élargit la portée à toute l'Île-de-France en 2022 en explorant davantage de variables explicatives.
 
+## Que contient se Git 
+README.md le fichier que vous lisez actuellement 
+Analyse model.ipynb le fichier contenant l'integralité des exports python demandé 
+
 #Phase1
+
 Objectif
 Prédire le prix au mètre carré des biens immobiliers à Paris en 2022 en utilisant la latitude et la longitude comme variables explicatives.
 
@@ -13,7 +18,9 @@ Entraînement du modèle : Utilisation de différents modèles (Linear Regressio
 Résultats
 Le modèle RandomForest Regressor a été identifié comme le meilleur, avec des paramètres optimaux tels que 'max_depth', 'min_samples_leaf', et 'n_estimators'.
 Les résultats sont évalués en utilisant la Mean Squared Error (RMSE) sur l'ensemble de test.
+
 #Phase2
+
 Objectif
 Étendre la prédiction du prix au mètre carré à toute l'Île-de-France en 2022, en explorant davantage de variables explicatives.
 
