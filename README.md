@@ -1,51 +1,31 @@
-Real Estate Price Prediction Project
-Overview
-Ce projet a pour objectif de prédire le prix au mètre carré des biens immobiliers en Île-de-France en utilisant différentes techniques de modélisation prédictive. Le projet est divisé en deux phases principales : la #phase1, qui se concentre sur la ville de Paris en 2022 avec deux variables explicatives (latitude et longitude), et la #phase2, qui élargit la portée à toute l'Île-de-France en 2022 en explorant davantage de variables explicatives.
+# Prédiction Immobilière
+## Ce projet a pour objectif de prédire le prix au mètre carré des biens immobiliers en Île-de-France en utilisant différentes techniques de modélisation prédictive. Le projet est divisé en deux phases principales :
 
-## Que contient se Git 
-README.md le fichier que vous lisez actuellement 
-Analyse model.ipynb le fichier contenant l'integralité des exports python demandé 
+### Phase 1 : Exploration et Entraînement du Modèle
 
-### Le rendu 
+Cette phase se concentre sur la ville de Paris en 2022 avec deux variables explicatives (latitude et longitude).
+Les données utilisées ont été rassemblées grâce à Git, couvrant toute l'Île-de-France en 2022, en explorant davantage de variables explicatives.
 
-#Phase1
+### Phase 2 : Déploiement de l'API pour les Prédictions
+Une API a été développée pour fournir des prédictions en temps réel sur le prix au mètre carré des biens immobiliers.
+Cette API peut être utilisée pour obtenir des prédictions personnalisées en fonction des caractéristiques des biens immobiliers.
 
-Objectif
-Prédire le prix au mètre carré des biens immobiliers à Paris en 2022 en utilisant la latitude et la longitude comme variables explicatives.
+## Contenu du Projet
+Api.py : Fichier contenant le code de l'API permettant de générer des prédictions.
+learn-opencv-by-examples-with-python.ipynb : Jupyter Notebook contenant des exemples d'utilisation d'OpenCV avec Python.
+main.ipynb : Notebook principal contenant l'exploration des données, l'entraînement du modèle et l'évaluation des performances.
+regression_model.pkl : Fichier contenant le modèle entraîné sauvegardé à l'aide de pickle.
+README.md : Fichier que vous lisez actuellement, contenant des informations sur le projet et son utilisation.
 
-Étapes
-Filtrage des données : Sélection des données uniquement pour Paris en 2022.
-Création de nouvelles fonctionnalités : Ajout de la fonctionnalité 'prix_m2'.
-Entraînement du modèle : Utilisation de différents modèles (Linear Regression, Decision Tree Regressor, RandomForest Regressor) avec GridSearchCV pour sélectionner le meilleur modèle.
-Résultats
-Le modèle RandomForest Regressor a été identifié comme le meilleur, avec des paramètres optimaux tels que 'max_depth', 'min_samples_leaf', et 'n_estimators'.
-Les résultats sont évalués en utilisant la Mean Squared Error (RMSE) sur l'ensemble de test.
+## Utilisation
+Exploration des Données et Entraînement du Modèle
 
-#Phase2
+Ouvrez le fichier main.ipynb dans Jupyter Notebook.
+Suivez les instructions pour explorer les données, entraîner le modèle et évaluer ses performances.
+Déploiement de l'API pour les Prédictions
 
-Objectif
-Étendre la prédiction du prix au mètre carré à toute l'Île-de-France en 2022, en explorant davantage de variables explicatives.
-
-Étapes
-Filtrage des données : Utilisation de l'ensemble de données pour toute l'Île-de-France en 2022.
-Exploration de nouvelles variables : Inclusion de variables supplémentaires dans le modèle.
-Entraînement du modèle : Utilisation de GridSearchCV avec différents modèles pour sélectionner le meilleur modèle.
-Résultats
-Le modèle RandomForest Regressor a également été identifié comme le meilleur pour cette phase.
-L'ensemble de test est utilisé pour évaluer les performances du modèle.
-API FastAPI
-Mise en œuvre de deux API distinctes pour les modèles de phase 1 et phase 2 respectivement. Les modèles sont exposés via des points de terminaison distincts.
-
-Fichiers et Modèles
-model_phase1.pkl : Modèle de phase 1 sauvegardé avec pickle.
-model_phase2.pkl : Modèle de phase 2 sauvegardé avec pickle.
-
-## Instructions d'utilisation
-Installer les dépendances avec pip install -r requirements.txt.
-Exécuter l'API FastAPI avec uvicorn api:app --reload.
-Utiliser les points de terminaison respectifs pour prédire les prix au mètre carré pour les deux phases.
-importer sur le meme chemin tableau.csv 
-
+Exécutez le fichier Api.py pour démarrer l'API.
+Accédez à l'API via un navigateur web ou un outil d'appel d'API pour obtenir des prédictions.
 
 
 
